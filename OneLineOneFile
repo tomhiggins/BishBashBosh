@@ -1,0 +1,2 @@
+while read feeds; do wget -q -O - $feeds| tr '\r' '\n' | tr \' \" | sed -n 's/.*url="\([^"]*\)".*/\1/p'|sort |uniq >temp.txt; while read pods; do  wget -q -U Cli4Life -nc $pods; done <temp.txt; done <podcasts.txt
+
