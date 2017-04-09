@@ -1,6 +1,6 @@
 # BishBashBosh
 One Line Podcast Podcatcher in Bash. 
-![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashbosh.jpg)
 There are a few variants......
 
 **One Line One File** - This will grab all the podcasts currently offered in the podcasts' rss feed. Create a files called podcast.txt that contains one podcast's rss feed url per line. 
