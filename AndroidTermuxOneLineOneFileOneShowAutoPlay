@@ -1,1 +1,1 @@
-while read feeds; do wget -q -O - $feeds| tr '\r' '\n' | tr \' \" | sed -n 's/.*url="\([^"]*\)".*/\1/p'|head -n 1 >temp.txt; while read pods; do wget -q -nc $pods; done <temp.txt; done <podcasts.txt; ls * |grep mp3 >newpodcasts.m3u; termux-open newpodcasts.m3u; rm temp.txt
+while read feeds; do wget -q -O - $feeds| tr '\r' '\n' | tr \' \" | sed -n 's/.*url="\([^"]*\)".*/\1/p'|head -n 1 >temp.txt; while read pods; do wget -q -nc $pods; done <temp.txt; done <podcasts.txt; ls * |grep mp3 >newpodcasts.m3u; while read show; do play-audio $show; done <newpodcasts.m3u; rm temp.txt
