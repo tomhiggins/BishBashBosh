@@ -24,5 +24,5 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 **Android Termux One Line One File One Show Auto Play**  -  To be run on an Android device that has Termux installed. This will grab the **most current** episode offered in the podcasts rss feeds. Create a files called podcast.txt that contains one podcast's rss feed url per line. It will play them one at at time on the Android device.  
 
 
-**BishBashBosh** running in a Linux terminal and being control from a web browser
+**BishBashBosh** running in a Linux terminal and being controled from a web browser
 ![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashboshss.jpg)
