@@ -15,7 +15,7 @@ Get the app out of the way, grab the goods and listen. **BishBashBosh**....done.
 - In that directory create a files called **podcasts.txt** that contains one podcast's rss feed url per line.  There is an example **podcasts.txt** available in this repo.  
 - Then simply copy  one of the **Options** and paste it in a command line.
   - For repeated use save into a .sh file and run that instead. 
-- Enjoy the Podcasts. Given the option you used they Podcasts are either being stream over your local net, are playing on your Android, or are waiting in the directory you created for you to open them up with the audio player of your liking. 
+- Enjoy the Podcasts. Given the option you used the Podcasts are either being stream over your local net, are playing on your Android, or are waiting in the directory you created for you to open them up with the audio player of your liking. 
 
 
 **Your Options**
