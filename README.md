@@ -26,3 +26,7 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 
 **BishBashBosh** running in a Linux terminal and being controled from a web browser
 ![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashboshss.jpg)
+
+**Inspiration**
+The orignal Bash based podcatcher by Linc - **BashPodder** - http://www.lincgeek.org/bashpodder/
+**Wget Mp3Blogs**, the pre podcast lifestyle -   - http://www.veen.com/jeff/archives/000573.html
