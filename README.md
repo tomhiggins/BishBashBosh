@@ -55,7 +55,7 @@ You should now see a web page with controls that will allows you to pick what yo
 
 **How do I change the deafult password**
 Before you hit enter and run the code 
- - Use the arrow keys to your cursor is at the word CHANGEME 
+ - Use the arrow keys so that your cursor is at the word CHANGEME 
  - Change it to something not so much of a defualt nature. 
  - Use the arrow keys to you get to the end of the line
  - Hit enter
@@ -72,5 +72,5 @@ On Linux, go to the machine that is running the audio server and cut and paste t
 The result will be a number like  **192.168.1.23** This is the IP number of that machine. So in this example to listen to the stream from anywhere on that network just point your Audio app to **http://192.168.1.23:8085**
 
 
-**This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation??? **
+**This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation?**
 
