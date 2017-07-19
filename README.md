@@ -3,12 +3,15 @@
 ![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashbosh.jpg)
 
 **What is This?**
-One line to get and listen to the podcasts you want. 
+With one line you can get and listen/share the Podcasts you love. 
 
 **Why?**
-Bloated overly feature stuffed apps with restrictive eulas and walled garden methodologies break some of what made Podcasts the joy they were always meant to be. The Podcasting method was created to make it easier to get the audio offerings you wanted to hear and to offer up your audio creations to a wider audience. 
+Bloated overly feature stuffed Podcast listening apps with restrictive eulas and walled garden methodologies break some of what made Podcasts the joy they were always meant to be. The Podcasting method was created to make it easier to get the audio offerings you love to hear and to offer up your audio creations to a wider audience. 
 
-Get the app out of the way, grab the goods and listen. **BishBashBosh**....done. 
+Get the app out of the way, just grab the Podcasts and listen. **BishBashBosh**....done. 
+
+**When Would I Use This?**
+If you are in an office, library, hackerspace, usergroup , on the road , hanging at a friend's house, in your own home and you want to listen to /share the podcasts you love. By using the Audio Server options you will be streaming these out to anyone who wants to listen on the same network as the machine/device you are running this on. Instant Streaming Podcast Station. BishBashBosh!
 
 **How To Use**
 - Make a directory that will hold the podcasts when they are downloaded. 
@@ -38,3 +41,22 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 **Inspiration**
 - The orignal Bash based podcatcher by Linc - **BashPodder** - http://www.lincgeek.org/bashpodder/
 - **Wget Mp3Blogs**, the pre podcast lifestyle -   - http://www.veen.com/jeff/archives/000573.html
+
+
+**FAQ**
+
+**When I am using the Audio Steam options how can I control what is being played?**
+From any web browser on the same network you are running this on goto **http://servingmachinesip:8088** The default passwrod is 
+**CHANGEME** , and yes you should really change that to something less deafultish. You should now see a web page with sontrols that will allows you to pick what you want to be streamed and in which order.  You can also use sn app on you phone.device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
+
+**How do I use an APP to listen to the stream?**
+My goto app is VLC (PlayStore or Fdroid). Your milage will vary. So long as the app has the option to stream audio you are good to go. Point your app to **http://servingmachineip:8085**
+
+**How do I find out the IP of the machine I am running the AudioServer on?**
+There are many ways to find this out depending on the type of machine you are using to run this. 
+On Linux, go to the machine that is running the audio server and cut and paste this into a Terminal/Command Line...
+**echo "$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')"**
+The result will be a number like  **192.168.1.23** so to listen to the stream from anywhere on that network just point your Audio app to **http://192.168.1.23:8085**
+
+**This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation??? ***
+
