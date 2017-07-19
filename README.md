@@ -45,9 +45,22 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 
 **FAQ**
 
-**When I am using the Audio Steam options how can I control what is being played?**
-From any web browser on the same network you are running this on goto **http://servingmachinesip:8088** The default passwrod is 
-**CHANGEME** , and yes you should really change that to something less deafultish. You should now see a web page with sontrols that will allows you to pick what you want to be streamed and in which order.  You can also use sn app on you phone.device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
+**When I am using the Audio Stream options how can I control what is being played?**
+ - From any web browser on the same network you are running this on goto **http://servingmachinesip:8088** 
+ - Leave the first  input section , the one for User Name, blank
+ - The default passwrod is  **CHANGEME** , and yes you should really change that to something less deafultish. 
+
+You should now see a web page with controls that will allows you to pick what you want to be streamed and in which order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
+
+
+**How do I change the deafult password**
+Before you hit enter and run the code 
+ - Use the arrow keys to your cursor is at the word CHANGEME 
+ - Change it to something not so much of a defualt nature. 
+ - Use the arrow keys to you get to the end of the line
+ - Hit enter
+ This will now be the password you will use to log into the controls for the Audio Stream.
+
 
 **How do I use an APP to listen to the stream?**
 My goto app is VLC (PlayStore or Fdroid). Your milage will vary. So long as the app has the option to stream audio you are good to go. Point your app to **http://servingmachineip:8085**
@@ -56,7 +69,8 @@ My goto app is VLC (PlayStore or Fdroid). Your milage will vary. So long as the 
 There are many ways to find this out depending on the type of machine you are using to run this. 
 On Linux, go to the machine that is running the audio server and cut and paste this into a Terminal/Command Line...
 **echo "$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')"**
-The result will be a number like  **192.168.1.23** so to listen to the stream from anywhere on that network just point your Audio app to **http://192.168.1.23:8085**
+The result will be a number like  **192.168.1.23** This is the IP number of that machine. So in this example to listen to the stream from anywhere on that network just point your Audio app to **http://192.168.1.23:8085**
 
-**This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation??? ***
+
+**This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation??? **
 
