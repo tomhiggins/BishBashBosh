@@ -74,3 +74,12 @@ The result will be a number like  **192.168.1.23** This is the IP number of that
 
 **This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation?**
 
+This line is for you. 
+**find /directory/where/your/music/is/ -name "*mp3">playlist.m3u | ip="$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')" | cvlc --no-auto-preparse -I http --http-password CHANGEME --http-host $ip --http-port 8088 --sout-keep --sout='#duplicate{dst=gather:std{access=http,mux=mpeg1,dst=:8085},dst=display,select="novideo"}' -LZ --no-auto-preparse playlist.m3u**
+
+ - You should run this in a directory where yo have rights to read and write files
+ - Change **/directory/where/your/music/is/** to the directory path where the music stash you want to stream is kept.
+   - This code will go into the directories under the main music directory as well. 
+ - Listening and Controling the Audio Stream is the same as for the other code, see Above
+ 
+ NB. For those with large collections of music the playlists may take a moment or three to load on the Control web page. Giv it time, it is working hard for your pleasure. 
