@@ -23,11 +23,11 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 
 **One Line One File** - This will grab **all** the episodes currently offered in the podcasts rss feeds. 
 
-**One Line One File Audio Server** - This will grab **all** the episodes currently offered in the podcasts rss feeds. It also opens an **local net audio server**  you control from http://machinesip:8088/ and play it on any streaming media app http://machinesip:8085/ from any device connected to your local net. 
+**One Line One File Audio Server** - This will grab **all** the episodes currently offered in the podcasts rss feeds. It also opens a **local net audio server**  you control from http://machinesip:8088/ and play it on any streaming media app  from any device connected to your local net. Simply tell it to stream from http://machinesip:8085/
 
 **One Line One File One Show Per Podcast** - This will grab the **most current** epsiode offered in the podcasts rss feeds. 
 
-**One Line One File One Show Per Podcast Audio Server** - This will grab the **most current** episodes offered in the podcasts rss feeds.It also opens an **local net audio server**  you control from http://machinesip:8088/ and play it on any streaming media app http://machinesip:8085/ from any device connected to your local net. 
+**One Line One File One Show Per Podcast Audio Server** - This will grab the **most current** episodes offered in the podcasts rss feeds. It also opens a **local net audio server**  you control from http://machinesip:8088/ and play it on any streaming media app  from any device connected to your local net. Simply tell it to stream from http://machinesip:8085/
 
 **Android Termux One Line One File One Show Auto Play**  -  To be run on an Android device that has Termux installed. This will grab the **most current** episode offered in the podcasts rss feeds. It will play them one at at time on the Android device.  
 
