@@ -84,7 +84,12 @@ find /directory/where/your/music/is/ -name "*mp3">playlist.m3u | ip="$(ip addr |
  - You should run this in a directory where yo have rights to read and write files
  - Change **/directory/where/your/music/is/** to the directory path where the music stash you want to stream is kept.
    - This code will go into the directories under the main music directory as well. 
+ - The code grabs all the names of the mp3 files and writes that into a file named **playlist.m3u**
+ - The songs are Randomized and when they are all played Looped to do it all over again until you stop it, the machine powers      
+    off, or to the heat death of the universe...which ever comes first. 
  - Listening and Controling the Audio Stream is the same as for the other code, see Above
    - Be good to yourself, see the  **How do I change the deafult password** section Above
    
  **NB** For those with large collections of music the playlists may take a moment or three to load on the Control web page. Giv it time, it is working hard for your pleasure. 
+
+
