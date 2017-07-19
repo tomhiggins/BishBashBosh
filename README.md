@@ -13,6 +13,13 @@ Get the app out of the way, just grab the Podcasts and listen. **BishBashBosh**.
 **When Would I Use This?**
 If you are in an office, library, hackerspace, usergroup , on the road , hanging at a friend's house, in your own home and you want to listen to /share the podcasts you love. By using the Audio Server options you will be streaming these out to anyone who wants to listen on the same network as the machine/device you are running this on. Instant Streaming Podcast Station. BishBashBosh!
 
+**What Do I Need To Run This**
+- A machine/device with **bash**
+- If you are running the Audio Streaming Server Options you will need **cvlc Command Line VLC**
+  - cvlc is often part of installing VLC 
+   - On Debian/Ubuntu/Raspbian/etc **sudo apt-get install vlc**
+
+
 **How To Use**
 - Make a directory that will hold the podcasts when they are downloaded. 
 - In that directory create a files called **podcasts.txt** that contains one podcast's rss feed url per line.  There is an example **podcasts.txt** available in this repo.  
@@ -53,6 +60,8 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 You should now see a web page with controls that will allows you to pick what you want to be streamed and in which order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
 
 
+
+
 **How do I change the deafult password**
 Before you hit enter and run the code 
  - Use the arrow keys so that your cursor is at the word CHANGEME 
@@ -65,14 +74,21 @@ Before you hit enter and run the code
  you want to be able to control it. Sometimes Temporary Autonomous Zones (TAZ) are just what the doctor ordered. It is up to you. 
 
 
+
+
 **How do I use an APP to listen to the stream?**
 My goto app is VLC (PlayStore or Fdroid). Your milage will vary. So long as the app has the option to stream audio you are good to go. Point your app to **http://servingmachineip:8085**
+
+
+
 
 **How do I find out the IP of the machine I am running the AudioServer on?**
 There are many ways to find this out depending on the type of machine you are using to run this. 
 On Linux, go to the machine that is running the audio server and cut and paste this into a Terminal/Command Line...
 **echo "$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')"**
 The result will be a number like  **192.168.1.23** This is the IP number of that machine. So in this example to listen to the stream from anywhere on that network just point your Audio app to **http://192.168.1.23:8085**
+
+
 
 
 **This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation?**
