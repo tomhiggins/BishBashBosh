@@ -11,7 +11,7 @@ Bloated overly feature stuffed Podcast listening apps with restrictive eulas and
 Get the app out of the way, just grab the Podcasts and listen. **BishBashBosh**....done. 
 
 **When Would I Use This?**
-If you are in an office, library, hackerspace, usergroup , on the road , hanging at a friend's house, in your own home and you want to listen to /share the podcasts you love. By using the Audio Server options you will be streaming these out to anyone who wants to listen on the same network as the machine/device you are running this on. Instant Streaming Podcast Station. BishBashBosh!
+If you are in an office, library, hacker-space, usergroup , on the road , hanging at a friend's house, in your own home and you want to listen to /share the podcasts you love. By using the Audio Server options you will be streaming these out to anyone who wants to listen on the same network as the machine/device you are running this on. Instant Streaming Podcast Station. BishBashBosh!
 
 **What Do I Need To Run This**
 - A machine/device with **bash**
@@ -29,13 +29,13 @@ If you are in an office, library, hackerspace, usergroup , on the road , hanging
 
 
 **Your Options**
-Here are a few lines to get at the Podcasts you want. Each one does it in a slightly differnt way and is aimed at differing situations...
+Here are a few lines to get at the Podcasts you want. Each one does it in a slightly different way and is aimed at differing situations...
 
 **One Line One File** - This will grab **all** the episodes currently offered in the podcasts rss feeds. 
 
 **One Line One File Audio Server** - This will grab **all** the episodes currently offered in the podcasts rss feeds. It also opens a **local net audio server**  you control from http://machinesip:8088/ and play it on any streaming media app  from any device connected to your local net. Simply tell it to stream from http://machinesip:8085/
 
-**One Line One File One Show Per Podcast** - This will grab the **most current** epsiode offered in the podcasts rss feeds. 
+**One Line One File One Show Per Podcast** - This will grab the **most current** episode offered in the podcasts rss feeds. 
 
 **One Line One File One Show Per Podcast Audio Server** - This will grab the **most current** episodes offered in the podcasts rss feeds. It also opens a **local net audio server**  you control from http://machinesip:8088/ and play it on any streaming media app  from any device connected to your local net. Simply tell it to stream from http://machinesip:8085/
 
@@ -46,7 +46,7 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 ![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashboshss.jpg)
 
 **Inspiration**
-- The orignal Bash based podcatcher by Linc - **BashPodder** - http://www.lincgeek.org/bashpodder/
+- The original Bash based pod-catcher by Linc - **BashPodder** - http://www.lincgeek.org/bashpodder/
 - **Wget Mp3Blogs**, the pre podcast lifestyle -   - http://www.veen.com/jeff/archives/000573.html
 
 
@@ -55,17 +55,17 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 **When I am using the Audio Stream options how can I control what is being played?**
  - From any web browser on the same network you are running this on goto **http://servingmachinesip:8088** 
  - Leave the first  input section , the one for User Name, blank
- - The default passwrod is  **CHANGEME** , and yes you should really change that to something less deafultish. 
+ - The default password is  **CHANGEME** , and yes you should really change that to something less deafultish. 
 
 You should now see a web page with controls that will allows you to pick what you want to be streamed and in which order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
 
 
 
 
-**How do I change the deafult password**
+**How do I change the default password**
 Before you hit enter and run the code 
  - Use the arrow keys so that your cursor is at the word CHANGEME 
- - Change it to something not so much of a defualt nature. 
+ - Change it to something not so much of a default nature. 
  - Use the arrow keys to you get to the end of the line
  - Hit enter
  This will now be the password you will use to log into the controls for the Audio Stream.
@@ -77,7 +77,7 @@ Before you hit enter and run the code
 
 
 **How do I use an APP to listen to the stream?**
-My goto app is VLC (PlayStore or Fdroid). Your milage will vary. So long as the app has the option to stream audio you are good to go. Point your app to **http://servingmachineip:8085**
+My goto app is VLC (PlayStore or Fdroid). Your mileage will vary. So long as the app has the option to stream audio you are good to go. Point your app to **http://servingmachineip:8085**
 
 
 
@@ -103,9 +103,7 @@ find /directory/where/your/music/is/ -name "*mp3">playlist.m3u | ip="$(ip addr |
  - The code grabs all the names of the mp3 files and writes that into a file named **playlist.m3u**
  - The songs are Randomized and when they are all played Looped to do it all over again until you stop it, the machine powers      
     off, or to the heat death of the universe...which ever comes first. 
- - Listening and Controling the Audio Stream is the same as for the other code, see Above
-   - Be good to yourself, see the  **How do I change the deafult password** section Above
+ - Listening and Controlling the Audio Stream is the same as for the other code, see Above
+   - Be good to yourself, see the  **How do I change the default password** section Above
    
  **NB** For those with large collections of music the playlists may take a moment or three to load on the Control web page. Give it time, it is working hard for your pleasure. 
-
-
