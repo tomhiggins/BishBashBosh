@@ -28,7 +28,7 @@ If you are in an office, library, hacker-space, usergroup , on the road , hangin
 - Enjoy the Podcasts. Given the option you used the Podcasts are either being streamed over your local net, are playing on your Android, or are waiting in the directory you created for you to open them up with the audio player of your liking. 
 
 
-**Your Options**
+## Your Options
 Here are a few lines to get at the Podcasts you want. Each one does it in a slightly different way and is aimed at differing situations...
 
 **One Line One File** - This will grab **all** the episodes currently offered in the podcasts rss feeds. 
@@ -50,7 +50,7 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 - **Wget Mp3Blogs**, the pre podcast lifestyle -   - http://www.veen.com/jeff/archives/000573.html
 
 
-**FAQ**
+## FAQ
 
 **When I am using the Audio Stream options how can I control what is being played?**
  - From any web browser on the same network you are running this on goto **http://servingmachinesip:8088** 
@@ -58,8 +58,6 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
  - The default password is  **CHANGEME** , and yes you should really change that to something less deafultish. 
 
 You should now see a web page with controls that will allows you to pick what you want to be streamed and in which order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
-
-
 
 
 **How do I change the default password**
@@ -73,13 +71,8 @@ Before you hit enter and run the code
  **NB** If you want to run this so that anyone can control the Audio Stream, give out the password to anyone and everyone
  you want to be able to control it. Sometimes Temporary Autonomous Zones (TAZ) are just what the doctor ordered. It is up to you. 
 
-
-
-
 **How do I use an APP to listen to the stream?**
 My goto app is VLC (PlayStore or Fdroid). Your mileage will vary. So long as the app has the option to stream audio you are good to go. Point your app to **http://servingmachineip:8085**
-
-
 
 
 **How do I find out the IP of the machine I am running the AudioServer on?**
@@ -89,13 +82,9 @@ On Linux, go to the machine that is running the audio server and cut and paste t
 The result will be a number like  **192.168.1.23** This is the IP number of that machine. So in this example to listen to the stream from anywhere on that network just point your Audio app to **http://192.168.1.23:8085**
 
 
-
-
 **This is cool but I do not want to stream podcasts, I have a ton of directories of music I want to stream out to my local  network. Please, how can I use one line of code and be an InstaDJRadioStation?**
 
-This line is for you. 
-
-find /directory/where/your/music/is/ -name "*mp3">playlist.m3u | ip="$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/')" | cvlc --no-auto-preparse -I http --http-password CHANGEME --http-host $ip --http-port 8088 --sout-keep --sout='#duplicate{dst=gather:std{access=http,mux=mpeg1,dst=:8085},dst=display,select="novideo"}' -LZ --no-auto-preparse --album-art=0 -q  playlist.m3u
+Try out the new  **RadioFreeInstaDJMCStreamalot Option** listed with the other Options above. 
 
  - You should run this in a directory where you have rights to read and write files
  - Change **/directory/where/your/music/is/** to the directory path where the music stash you want to stream is kept.
