@@ -22,7 +22,7 @@ If you are in an office, library, hacker-space, usergroup , on the road , hangin
 
 **How To Use**
 - Make a directory that will hold the podcasts when they are downloaded. 
-- In that directory create a files called **podcasts.txt** that contains one podcast's rss feed url per line.  There is an example **podcasts.txt** available in this repo.  
+- In that directory create a file called **podcasts.txt** that contains one podcast's rss feed url per line.  There is an example **podcasts.txt** available in this repo.  
 - Then simply copy  one of the **Options** and paste it in a command line.
   - For repeated use save into a .sh file and run that instead. 
 - Enjoy the Podcasts. Given the option you used the Podcasts are either being streamed over your local net, are playing on your Android, or are waiting in the directory you created for you to open them up with the audio player of your liking. 
