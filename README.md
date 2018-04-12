@@ -55,7 +55,7 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 **When I am using the Audio Stream options how can I control what is being played?**
  - From any web browser on the same network you are running this on goto **http://servingmachinesip:8088** 
  - Leave the first  input section , the one for User Name, blank
- - The default password is  **CHANGEME** , and yes you should really change that to something less deafultish. 
+ - The default password is  **CHANGEME** , and yes you should really change that to something less defaultish. 
 
 You should now see a web page with controls that will allows you to pick what you want to be streamed and in which order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
 
