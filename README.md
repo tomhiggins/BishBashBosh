@@ -57,7 +57,7 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
  - Leave the first  input section , the one for User Name, blank
  - The default password is  **CHANGEME** , and yes you should really change that to something less defaultish. 
 
-You should now see a web page with controls that will allows you to pick what you want to be streamed and in which order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
+You should now see a web page with controls that will allow you to pick what you want to be streamed and in what order.  You can also use an app on your phone/device such as RemoteForVLC (https://f-droid.org/packages/org.peterbaldwin.client.android.vlcremote/)
 
 
 **How do I change the default password**
@@ -88,7 +88,7 @@ Try out the new  **RadioFreeInstaDJMCStreamalot Option** listed with the other O
 
  - You should run this in a directory where you have rights to read and write files
  - Change **/directory/where/your/music/is/** to the directory path where the music stash you want to stream is kept.
-   - This code will go into the directories under the main music directory as well. 
+   - This code will get into the directories under the main music directory as well. 
  - The code grabs all the names of the mp3 files and writes that into a file named **playlist.m3u**
  - The songs are Randomized and when they are all played Looped to do it all over again until you stop it, the machine powers      
     off, or to the heat death of the universe...which ever comes first. 
