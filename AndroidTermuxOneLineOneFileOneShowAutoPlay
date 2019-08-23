@@ -1,1 +1,1 @@
-while read feeds; do wget -q -O - $feeds| tr '\r' '\n' | tr \' \" | sed -n 's/.*url="\([^"]*\)".*/\1/p'|head -n 1 >>pods.m3u; done <podcasts.txt; mpv pods.m3u
+echo '' >pods.m3u; while read feeds; do wget -q -O - $feeds| tr '\r' '\n' | tr \' \" | sed -n 's/.*url="\([^"]*\)".*/\1/p'|head -n 1 >>pods.m3u; done <podcasts.txt; mpv pods.m3u
