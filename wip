@@ -1,0 +1,6 @@
+Ideas to work on
+
+Browser String graber and player   
+data:text/html,<audio controls="controls" id="audio_player"> <source src="https://archive.org/download/OTE_19941020_The_Experience_Remix/OTE_19941020_The_Experience_Remix.mp3" type="audio/mpeg" /  Your browser does not support the audio element.</audio>
+
+js parser, gets the enclosures, passes them to audio tag. Work on it. 
