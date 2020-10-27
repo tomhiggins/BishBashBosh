@@ -3,7 +3,7 @@
 ![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashbosh.jpg)
 
 **What is This?**
-With one line you can get and listen/share the Podcasts you love. 
+With one line you can get and listen/share the Podcasts you love.  **Now In New Windows Flavor**
 
 **Why?**
 Bloated overly feature stuffed Podcast listening apps with restrictive eulas and walled garden methodologies break some of what made Podcasts the joy they were always meant to be. The Podcasting method was created to make it easier to get the audio offerings you love to hear and to offer up your audio creations to a wider audience. 
@@ -18,6 +18,12 @@ If you are in an office, library, hacker-space, usergroup , on the road , hangin
 - If you are running the Audio Streaming Server Options you will need **cvlc Command Line VLC**
   - cvlc is often part of installing VLC 
    - On Debian/Ubuntu/Raspbian/etc **sudo apt-get install vlc**
+
+**What If I Use Windows Without Bash**
+- Fear not, all is not lost
+- Install [VLC](https://www.videolan.org/vlc/download-windows.html)
+- Use PowerShell
+  - Cut the line you need and paste into a Powershell command line. Hit enter. Enjoy
 
 
 **How To Use**
@@ -41,6 +47,9 @@ Here are a few lines to get at the Podcasts you want. Each one does it in a slig
 
 **Android Termux One Line One Show Streamer**  -  To be run on an Android device that has Termux installed. Also apt-get install wget mpv .This will stream the **most current** episode offered in the podcast's rss feeds. It will play them one at at time on the Android device.  Can be played in the background. Enter/Return key to skip to the next podcast. 
  
+ **Windows One Line All Shows Stream** - This will stream every show in all the podcasts you have listed in the **podcasts.txt** file
+ 
+**Windows One Line One Show Per Podcast Stream** - This will stream the most current show from all the podcasts you have listed in the **podcasts.txt** file
 
 **BishBashBosh** running in a Linux terminal and being controled from a web browser
 ![alt tag](https://github.com/tomhiggins/BishBashBosh/raw/master/bishbashboshss.jpg)
