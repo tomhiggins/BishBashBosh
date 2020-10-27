@@ -3,3 +3,4 @@ http://revolutionspodcast.libsyn.com/rss
 http://www.hellointernet.fm/podcast?format=rss
 http://tomwsmf.com/podcasts/shepaday.rss
 http://historyofenglishpodcast.com/feed/podcast/
+http://hourofslack.libsyn.com/rss
