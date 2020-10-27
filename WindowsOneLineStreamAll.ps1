@@ -1,0 +1,1 @@
+del play.m3u;foreach ($podcast in (Get-Content "podcasts.txt")) {Invoke-WebRequest -Uri $podcast -Outfile 'feed.xml' ;[xml]$Content = Get-Content feed.xml;$Feed = $Content.rss.channel;ForEach ($msg in $Feed.Item){ echo $msg.enclosure.url | Out-file play.m3u -Append }};& 'C:\Program Files\VideoLAN\VLC\vlc.exe' play.m3u
