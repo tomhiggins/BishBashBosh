@@ -1,0 +1,1 @@
+del play.m3u;foreach ($podcast in (Get-Content "podcasts.txt")) {Invoke-WebRequest -Uri $podcast -Outfile 'feed.xml' ;[xml]$Content = Get-Content feed.xml;$Feed = $Content.rss.channel;echo $Feed.Item.enclosure.url |select-object -first 1| Out-file play.m3u -Append }
