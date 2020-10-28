@@ -1,1 +1,1 @@
-foreach ($podcast in (Get-Content "podcasts.txt")) {Invoke-WebRequest -Uri $podcast -Outfile 'feed.xml' ;[xml]$Content = Get-Content feed.xml;$show = $Content.rss.channel.Item.enclosure.url |select-object -first 1| Invoke-WebRequest -Uri $show |Out-file (Split-Path $show -leaf) -NoClobber};& 'C:\Program Files\VideoLAN\VLC\vlc.exe' *mp3
+wip
